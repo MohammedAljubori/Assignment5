@@ -1,0 +1,17 @@
+package Assignment5;
+
+public class ScoreCalculator {
+	/**
+	* This calculates the average score and returns the value to ScoreGUI
+	*/
+	public static double int(score[] calScore, double[] weight) {
+		double avgScore = 0;
+		double totalScore = 0;
+		for (int i = 0; i < score.length; i++) {
+			totalScore += score[i] * weight[i];
+		}
+		avgScore = totalScore / score.length;
+		return avgScore;
+	}
+}
+
